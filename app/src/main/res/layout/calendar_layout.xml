@@ -12,7 +12,7 @@
         android:orientation="horizontal"
         android:paddingTop="8dp"
         android:paddingBottom="8dp"
-        android:background="#EE8AF8">
+        android:background="@color/white">
 
         <ImageButton
             android:layout_width="40dp"
@@ -22,16 +22,16 @@
             android:layout_margin="10dp"/>
 
         <TextView
+            android:id="@+id/current_Date"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/current_Date"
+            android:layout_marginTop="16dp"
+            android:layout_weight="3"
             android:gravity="center"
             android:text="CurrentDate"
-            android:textColor="@color/white"
-            android:textStyle="bold"
+            android:textColor="@color/black"
             android:textSize="18dp"
-            android:layout_weight="3"
-            android:layout_marginTop="4dp"/>
+            android:textStyle="bold" />
 
         <ImageButton
             android:layout_width="40dp"
@@ -46,19 +46,18 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:paddingTop="4dp"
-        android:paddingBottom="4dp"
-        android:background="#58135E">
+        android:paddingTop="2dp"
+        android:background="#C0C0C0">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="Lun."
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:textStyle="bold"
             android:textSize="18dp"
-            android:background="#4BA4A6"
+            android:background="@color/white"
             android:layout_weight="1"/>
 
         <TextView
@@ -66,10 +65,10 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="Mar."
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:textStyle="bold"
             android:textSize="18dp"
-            android:background="#FFFD55"
+            android:background="@color/white"
             android:layout_weight="1"/>
 
         <TextView
@@ -77,10 +76,10 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="Mié."
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:textStyle="bold"
             android:textSize="18dp"
-            android:background="#F08650"
+            android:background="@color/white"
             android:layout_weight="1"/>
 
         <TextView
@@ -88,10 +87,10 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="Jue."
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:textStyle="bold"
             android:textSize="18dp"
-            android:background="#377E47"
+            android:background="@color/white"
             android:layout_weight="1"/>
 
         <TextView
@@ -99,10 +98,10 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="Vie."
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:textStyle="bold"
             android:textSize="18dp"
-            android:background="#75163F"
+            android:background="@color/white"
             android:layout_weight="1"/>
 
         <TextView
@@ -110,10 +109,10 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="Sáb."
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:textStyle="bold"
             android:textSize="18dp"
-            android:background="#808080"
+            android:background="@color/white"
             android:layout_weight="1"/>
 
         <TextView
@@ -121,10 +120,10 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="Dom."
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:textStyle="bold"
             android:textSize="18dp"
-            android:background="#183E0C"
+            android:background="@color/white"
             android:layout_weight="1"/>
 
 
@@ -136,15 +135,9 @@
         android:numColumns="7"
         android:verticalSpacing="1dp"
         android:horizontalSpacing="1dp"
-        android:background="#E6E6E6"
+        android:background="#EA3680"
         android:stretchMode="columnWidth"
         android:gravity="center"
         android:id="@+id/gridView"/>
-
-
-
-    
-
-
 
 </LinearLayout>

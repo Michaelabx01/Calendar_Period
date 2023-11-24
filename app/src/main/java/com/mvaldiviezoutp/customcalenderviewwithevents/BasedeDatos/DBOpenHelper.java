@@ -8,7 +8,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 import androidx.annotation.Nullable;
 
-public class BDOpenHelper extends SQLiteOpenHelper {
+public class DBOpenHelper extends SQLiteOpenHelper {
 
     private static final String CREATE_EVENTS_TABLE = "CREATE TABLE " + DBStructure.EVENT_TABLE_NAME
             + "(ID INTEGER PRIMARY KEY AUTOINCREMENT, " + DBStructure.EVENT + " TEXT, "
@@ -17,7 +17,7 @@ public class BDOpenHelper extends SQLiteOpenHelper {
 
     private static final String DROP_EVENTS_TABLE = "DROP TABLE IF EXISTS " + DBStructure.EVENT_TABLE_NAME;
 
-    public BDOpenHelper(@Nullable Context context) {
+    public DBOpenHelper(@Nullable Context context) {
         super(context, DBStructure.DB_NAME, null, DBStructure.DB_VERSION);
     }
 
